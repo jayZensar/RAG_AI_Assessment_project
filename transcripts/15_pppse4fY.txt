@@ -1,0 +1,304 @@
+[00:00:00] My goal for today's video is to provide
+[00:00:02] you with no BS extremely simple agentic
+[00:00:05] AI explanation. I'm going to show you
+[00:00:07] some real agentic AI systems along with
+[00:00:10] the code. So please stay with me till
+[00:00:12] the end. We will start with a real life
+[00:00:15] example of my own company. We have 55
+[00:00:17] plus people and for these people we want
+[00:00:20] to build an HR assistant which can
+[00:00:23] answer simple questions on policies such
+[00:00:25] as how many vacation days do they have
+[00:00:27] per year or what is the policy on seek
+[00:00:30] leave and for this all this policy data
+[00:00:34] you have it available in PDF files you
+[00:00:36] can build a retrieval augmented
+[00:00:39] generation chatboard which can simply
+[00:00:42] pull the information from this PDF and
+[00:00:45] answer these questions.
+[00:00:46] Now is this an agentic AI? The answer is
+[00:00:50] no. Anthropic has this document on
+[00:00:53] building effective agents and they
+[00:00:56] categorize these AI applications into
+[00:00:58] two categories workflows and agents.
+[00:01:00] This rack based chatboard is actually a
+[00:01:03] workflow. It is not agentic. Let's
+[00:01:05] advance this chatboard a bit more and
+[00:01:09] let's add a support where you can ask
+[00:01:12] question. Okay, how many leaves do I
+[00:01:14] have left? Specifically, you know, as an
+[00:01:17] employee, how many leaves do I have
+[00:01:19] left? You can also apply for the leaves
+[00:01:22] right here. Now, see this is important.
+[00:01:24] This is not just question and answer.
+[00:01:25] You are taking actions. So, here you
+[00:01:28] obviously have access to your policy
+[00:01:31] data via PDF. But on top of that you
+[00:01:34] integrated LLM with HR management system
+[00:01:38] through their APIs where you can not
+[00:01:40] only pull the leaves for a given
+[00:01:43] employee you can also apply for a leave.
+[00:01:46] Okay. So here it will detect your login.
+[00:01:49] It will identify whether you are moan
+[00:01:52] Sharma or Abdul Kadir whoever you you
+[00:01:55] are and it will take the necessary
+[00:01:59] action. Do we call this agentic AI?
+[00:02:02] Well, the answer is again no. This is
+[00:02:04] tool augmented chatboard. We want to
+[00:02:09] advance this further and give it a goal
+[00:02:12] such as prepare for Sara's maternity
+[00:02:16] leave. Now, this requires multi-step
+[00:02:19] reasoning and multi-turn planning.
+[00:02:21] Another question, onboard the new intern
+[00:02:24] joining next Monday. Well, this again
+[00:02:27] requires multi-step planning. Okay. So,
+[00:02:30] let's call this a broader goal. It is
+[00:02:33] not a simple task. It's a complex task
+[00:02:37] and it requires a multi-step reasoning
+[00:02:40] first of all and then you come up with a
+[00:02:42] plan that I need to schedule a welcome
+[00:02:45] meeting with this intern and you will
+[00:02:48] actually send the meeting invite via
+[00:02:50] Outlook or whatever uh calendar system
+[00:02:53] that you're using. then you might want
+[00:02:55] to create interns profile in HR
+[00:02:58] management system. So now you have
+[00:03:00] integration uh through your HR
+[00:03:03] management system APIs where it can go
+[00:03:06] and create interns profile at every step
+[00:03:10] there will be some generation also right
+[00:03:12] because you let's say if you want to
+[00:03:14] schedule a meeting you need to write
+[00:03:16] some description on what this meeting is
+[00:03:18] about and all of that you can generate
+[00:03:20] using this LLM that you have then you
+[00:03:23] want to create a ticket in IT help desk
+[00:03:27] where you get Wi-Fi credential s the
+[00:03:29] email, Slack access, etc. for that
+[00:03:32] particular intern. Again, here you will
+[00:03:35] have uh LLM's role being played as well
+[00:03:39] as you have integration with multiple
+[00:03:41] tools such as Slack, Outlook, u your
+[00:03:44] Wi-Fi system and so on. And then you
+[00:03:47] want to order a laptop. So you have some
+[00:03:49] kind of you know inventory management
+[00:03:51] system or some kind of uh IT support
+[00:03:54] desk where you can issue ID card order
+[00:03:57] laptop and so on. This is agentic AI
+[00:04:01] folks. It requires multi-step reasoning
+[00:04:04] and you have to do multi-step planning
+[00:04:07] and in each of these steps LLMs will be
+[00:04:10] involved along with APIs and tools and
+[00:04:13] knowledge and memory and so on. So if
+[00:04:15] you describe a few characteristics of
+[00:04:18] agentic AI system then first one is goal
+[00:04:21] oriented planning you are not giving a
+[00:04:24] task such as tell me how many leaves I
+[00:04:26] have left okay two that is a simple task
+[00:04:29] you are giving here a complex task which
+[00:04:35] requires reasoning as well as multi-step
+[00:04:38] planning okay so the first
+[00:04:40] characteristic is goal oriented planning
+[00:04:43] second one is multi step reasoning then
+[00:04:47] autonomous decision making. See this
+[00:04:49] system will send an email it will send
+[00:04:52] uh the invite for the meeting. So all of
+[00:04:55] that it is doing in a autonomous way. It
+[00:04:58] is not saying okay go to outlook click
+[00:05:00] this button. It is actually doing that
+[00:05:02] work. It is performing actions for you.
+[00:05:05] Then it has access to tools. All these
+[00:05:08] tools okay outlook and HR management
+[00:05:10] system and so on. knowledge which can be
+[00:05:13] a PDF files, database and so on. It will
+[00:05:16] also have a memory. So when you are
+[00:05:17] having a conversation, it will have a
+[00:05:19] context, it will remember things. So
+[00:05:22] this is agentic chatboard. Okay. And any
+[00:05:25] AI system that you are building uh which
+[00:05:28] has uh autonomy, okay, it it has some
+[00:05:32] kind of agency where it can make certain
+[00:05:35] decisions and it can take certain
+[00:05:37] actions on its own. Plus it has
+[00:05:40] multi-step complex reasoning and
+[00:05:42] planning. That system is called agentic
+[00:05:45] AI. If I have to put it in a very simple
+[00:05:47] definition, agentic AI is an AI system
+[00:05:50] that can make decisions and take actions
+[00:05:52] on its own to achieve a goal without
+[00:05:56] being told exactly what to do at every
+[00:06:01] step. Here is a table summarizing the
+[00:06:03] capabilities of all three chatboards.
+[00:06:06] The rack based chatboard is reactive
+[00:06:08] which means more like Q&A. You ask a
+[00:06:10] question it responds but it doesn't have
+[00:06:13] tool usage, reasoning etc. The second
+[00:06:15] one tool augmented chatboard is reactive
+[00:06:19] and it also has access to tool but it
+[00:06:22] cannot reason plan and be proactive.
+[00:06:25] Whereas agentic AI system has all these
+[00:06:28] characteristics. There are many examples
+[00:06:31] of agentic AI systems. For example, AI
+[00:06:33] coding. If you're using lovable or
+[00:06:35] replet to create a react native app
+[00:06:38] similar to to-do east okay then see it
+[00:06:41] will first figure out what kind of
+[00:06:45] features to-do list has then it will do
+[00:06:48] see this kind of multi-step planning and
+[00:06:51] it will then write code execute the code
+[00:06:55] it will debug it fix issues again write
+[00:06:58] code execute it and so on okay so AI
+[00:07:02] coding being done through lovable,
+[00:07:05] rapit, etc. is an example of an agentic
+[00:07:08] AI system. The other one is travel
+[00:07:11] assistant. You might have a travel
+[00:07:13] assistant where you can say book a 7-day
+[00:07:15] trip to London in May where where the
+[00:07:18] weather is sunny for at least 4 days.
+[00:07:20] This is usually my criteria. You know,
+[00:07:22] whenever I go anywhere, I want the
+[00:07:23] weather to be sunny. And you have some
+[00:07:26] uh budget uh constraints. So now if you
+[00:07:30] have built agentic AI system, it will
+[00:07:32] first prepare a plan. You know how
+[00:07:35] deepsek creates that plan or any other
+[00:07:38] reasoning model will create a plan. So
+[00:07:40] it will first create a plan then it will
+[00:07:43] execute that plan step by step with the
+[00:07:47] help of all the tools and APIs that you
+[00:07:50] have integrated. In this particular
+[00:07:52] system, I might have integrated Acue
+[00:07:56] weather API for weather, Xedia API for
+[00:07:59] booking flights and so on. Here is a
+[00:08:01] small example of agentic AI system where
+[00:08:04] you are writing an agent to assist an
+[00:08:07] equity research analyst. They usually
+[00:08:10] write reports on companies. So here you
+[00:08:13] are giving a goal. You are not giving
+[00:08:14] the exit steps. Okay. Write a report on
+[00:08:17] Nvidia. You're also giving it access to
+[00:08:21] y finance tool reasoning tools. You can
+[00:08:23] provide duck duck go search and so on.
+[00:08:26] And here we are using agno framework.
+[00:08:28] You can just say pip install agno and
+[00:08:30] you can run this code. This code is
+[00:08:32] available in the video description
+[00:08:33] below. Now when I run this, see here I'm
+[00:08:36] using gemini as a model here. And what
+[00:08:40] it will do is it will look at this goal
+[00:08:43] and it will do multi-step reasoning
+[00:08:47] planning and then it will execute those
+[00:08:49] steps. So see here it is doing
+[00:08:51] reasoning. Okay, I need to gather this
+[00:08:53] much information. Here is my reasoning.
+[00:08:56] Then this is the step number two.
+[00:08:58] Compile a report. Uh you need to perform
+[00:09:02] all these steps right like getting a
+[00:09:03] company info, analyst recommendation,
+[00:09:06] company news. So it is doing all of that
+[00:09:08] step by step and generating this
+[00:09:10] comprehensive report which has some key
+[00:09:13] statistics for that company. Uh analyst
+[00:09:16] recommendation is one of the common
+[00:09:18] things you'll find in any uh equity
+[00:09:20] research report and recent news as well.
+[00:09:23] I did not say okay have news in the
+[00:09:26] bottom have analyst recommendation and
+[00:09:28] so on. It kind of figured it out on its
+[00:09:30] own. You don't have to always write the
+[00:09:33] code. You can use low code or no code
+[00:09:36] tools such as Zapier. Here they are
+[00:09:38] showing a cloud integration with their
+[00:09:40] Zapier MCP server and you have connected
+[00:09:43] all these tools and now you're saying
+[00:09:44] like what's on my calendar. It will
+[00:09:46] access the uh calendar tool and it will
+[00:09:48] tell you uh what do you have then you
+[00:09:52] can have some other task. See here it is
+[00:09:55] showing me the calendar items. Then you
+[00:09:57] can say can you tell me more about this
+[00:10:00] particular thing and it will call the
+[00:10:02] appropriate uh tool and it will tell you
+[00:10:07] l veo is a CEO at whatever company. Uh
+[00:10:12] these are simple tasks but you can have
+[00:10:14] complex tasks you can use a reasoning
+[00:10:17] model and you can uh design your MCP
+[00:10:21] server such that it can handle those
+[00:10:23] multi-step reasoning process. The other
+[00:10:25] tool I want to mention which is similar
+[00:10:27] to Zapier is
+[00:10:29] N8N where you can do drag and drop
+[00:10:32] essentially and see here let's say you
+[00:10:36] are doing create user form submission
+[00:10:38] and then it will trigger this AI agent
+[00:10:40] which has anthropic chat model it has
+[00:10:44] posgress chat memory it has access to
+[00:10:46] Jira Microsoft enter ID and so on and
+[00:10:49] then you can define these kind of
+[00:10:51] workflows see you can define these kind
+[00:10:53] of workflows and you can create rag
+[00:10:56] based system or tool augmented system or
+[00:10:59] even agentic AI. Okay. So agentic for
+[00:11:03] agentic AI this AI agent piece is going
+[00:11:05] to be important. The kind of prompt that
+[00:11:08] you write you can make it solve really
+[00:11:11] complex issues using the reasoning model
+[00:11:14] such as GPT40. You may have this
+[00:11:17] question what is the difference between
+[00:11:18] AI agent and agentic AI? Well, you see
+[00:11:21] this diagram. This is a diagram of an
+[00:11:24] agentic AI system in an ATN. And any
+[00:11:28] agentic AI system will have one or more
+[00:11:31] agents. So here you have this one agent.
+[00:11:34] You can have multiple agents. Okay. But
+[00:11:36] you need at least one AI agent with that
+[00:11:38] agentic complex reasoning behavior. The
+[00:11:42] second question you might have is what
+[00:11:44] is the difference between Gen AI? Okay,
+[00:11:47] Gen AI versus agentic AI. Well, Genai is
+[00:11:52] part of agentic AI. So you see this
+[00:11:55] Google Gemini model. So this model might
+[00:11:58] generate some text. It might write
+[00:12:00] email. It might summarize something. It
+[00:12:03] will have all those generation
+[00:12:04] capabilities and it is one of the
+[00:12:06] component in your agentic AI system. All
+[00:12:09] right. So generative AI is related to
+[00:12:12] generating new data, text, video, images
+[00:12:14] and so on. And you can have that as a
+[00:12:17] subcomponent within your agentic AI
+[00:12:19] system. If you want to see some real
+[00:12:21] project examples along with the code for
+[00:12:23] rag and two augmented AI systems then I
+[00:12:26] have two different videos. We have given
+[00:12:28] all the code. See the code for both the
+[00:12:30] projects is here. This is a cold email
+[00:12:32] generator and the second one is MCP for
+[00:12:36] that HR le management and also I would
+[00:12:39] suggest you read this building effective
+[00:12:42] agents guide by anthropic. They have
+[00:12:46] mentioned various design patterns. So
+[00:12:49] this is one workflow based design
+[00:12:51] pattern where let's say you have a
+[00:12:53] chatboard and the question might be
+[00:12:55] routed to a technical support team or a
+[00:12:59] sales team or some other team. In that
+[00:13:01] case you can have LLM as a router and
+[00:13:03] then individual LLMs each for sales team
+[00:13:06] technical team and so on. Uh everything
+[00:13:09] is hardwired through code here. So this
+[00:13:11] is a workflow. There is another example
+[00:13:14] of a workflow where uh you perform
+[00:13:16] individual tasks using these LLMs and
+[00:13:18] then you aggregate them. Okay. Uh here
+[00:13:21] is another example of orchestrator based
+[00:13:24] workers. This is also a workflow and
+[00:13:27] then comes agents. So for agents see
+[00:13:30] there will be this kind of loop. So
+[00:13:31] action feedback action feedback you know
+[00:13:34] multi-step reasoning multi-step
+[00:13:36] planning. Folks I hope now it is clear
+[00:13:38] what exactly is agentic AI. It's just a
+[00:13:41] jargon. The idea is really simple.
+[00:13:43] Please check video description for the
+[00:13:45] code and other resources.
