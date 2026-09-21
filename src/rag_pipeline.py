@@ -299,6 +299,22 @@ def format_docs(docs) -> str:
     )
 
 
+def _content_to_text(content) -> str:
+    """Chat model .content is usually a str, but some providers (e.g. Gemini) return a list
+    of content blocks - normalize either shape into plain text."""
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts = []
+        for block in content:
+            if isinstance(block, str):
+                parts.append(block)
+            elif isinstance(block, dict):
+                parts.append(block.get("text", ""))
+        return "".join(parts)
+    return str(content)
+
+
 # --------------------------------------------------------------------------------------
 # Public API: YouTubeRagChatbot ties everything together.
 # --------------------------------------------------------------------------------------
@@ -411,8 +427,8 @@ class YouTubeRagChatbot:
                     "question, just summarize the topic.\n\nTranscript excerpt:\n" + preview_text
                 )
                 result = self.llm.invoke(prompt)
-                text = result.content if hasattr(result, "content") else str(result)
-                return text.strip()
+                content = result.content if hasattr(result, "content") else result
+                return _content_to_text(content).strip()
             except Exception as exc:
                 print(f"Could not summarize video ({exc}); falling back to a plain excerpt.")
 
